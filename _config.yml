@@ -1,0 +1,60 @@
+# Site settings
+title: "Hope for Healing Breast Cancer Foundation Charity"
+email: kosiakude393@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Hope for Healing Breast Cancer Foundation Charity supports breast cancer patients in Nigeria. Join our mission to provide financial assistance and support to those battling cancer.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://ak1415.github.io/hope-for-healing" # the base hostname & protocol for your site
+
+# Social media usernames
+instagram_username: hopeforhealing.ng
+github_username: ak1415
+
+# Build settings
+theme: minima
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag # For better SEO
+  - jekyll-sitemap # To generate a sitemap
+  - jekyll-paginate # For pagination
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: "" # empty string means all files
+    values:
+      layout: "default"
+
+# Exclude from processing
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Permalinks
+permalink: pretty
+
+# Markdown configuration
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  footnote_nr: 1
+  entity_output: as_char
+  math_engine: nil
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    default_lang: python
+    line_numbers: true
+    wrap: false
